@@ -1,0 +1,34 @@
+<html>
+<head><title>My Family</title></head>
+<link rel="stylesheet" href="style.css">
+<h1>My Family Book</h1>
+<img id="image-cover" src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg">
+<div>
+    <button type="button" onclick="nextslide()">Next</button>
+</div>
+<script>
+var first_name = "My first console!";
+var last_name = "I'm happy :D";
+console.log(first_name.concat(last_name));
+console.log(first_name.length);
+console.log(last_name.toUpperCase());
+console.log(Math.min(78,90));
+console.log(Math.pow(9,45));
+var images = ["https://thumbs.dreamstime.com/b/dad-icon-cartoon-style-dad-icon-cartoon-style-white-background-123080092.jpg", "https://www.pinclipart.com/picdir/middle/35-353068_mother-with-short-brown-hair-clip-art-at.png", "https://webstockreview.net/images/teen-clipart-teenager-cartoon-2.jpg", "https://i.pinimg.com/originals/90/73/f7/9073f7555adc1b644dcd32b2b8f688a7.jpg"];
+var names = ["Mehul Bhatt", "Hita Bhatt", "Aesha Bhatt", "Hrisha Bhatt"];
+var i = 0;
+function  nextslide () {
+  
+  if (i == 4)
+   {
+     i=0;
+   }
+  document.getElementById ("image-cover").src= images [i];
+i++;
+}
+
+
+
+</script>
+
+</html>
